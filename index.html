@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Список задач</h1>
+    </header>
+
+    <main>
+      <form autocomplete="off" class="todo-form">
+        <label>
+          <input class="todo-form__inputTodo" id="new-todo" name="todo" type="text" placeholder="Новая задача" />
+        </label>
+        <select class="todo-form__userSelect" name="user" id="user-todo">
+          <option disabled selected>Выберите пользователя</option>
+        </select>
+        <button class="todo-form__btn">Добавить задачу</button>
+      </form>
+      <ul class="todo-list" id="todo-list"></ul>
+    </main>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

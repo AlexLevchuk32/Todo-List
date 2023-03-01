@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.2rem;
+  background-color: #9e9e9e;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  color: #fff;
+  max-height: 100px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.header__title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Форма */
+.todo-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input,
+form select {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.todo-form__btn {
+  font-size: 1.2rem;
+  background-color: #1fa803;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+.todo-form__btn:hover {
+  background-color: #faa1fa;
+  color: #000;
+}
+.todo-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 0;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+.close {
+  margin-left: auto;
+  color: #ff0000;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.close:hover {
+  color: #fd593c;
+}
